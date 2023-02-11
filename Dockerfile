@@ -14,5 +14,5 @@ COPY ./images ./images
 
 EXPOSE 8080
 
-ENTRYPOINT java -Djavax.net.ssl.trustStore -jar walletbox-dev.jar
+ENTRYPOINT java -Djavax.net.debug=all -Djavax.net.ssl.trustStore -jar walletbox-dev.jar
 
